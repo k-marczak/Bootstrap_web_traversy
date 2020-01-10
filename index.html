@@ -28,7 +28,7 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-link" href="#showcase">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#info1">About</a>
@@ -174,7 +174,42 @@
 			  origin: 'right',
 			  distance: '300px'
 		  })
+		  sr.reveal('.showcase-btn',{
+			  duration: 2000,
+			  delay: 2000,
+			  origin: 'bottom'
+		  })
+		  sr.reveal('.#testimonial div',{
+			  duration: 2000,
+			  delay: 2000,
+			  origin: 'bottom'
+		  })
+		  sr.reveal('.info-left',{
+			  duration: 2000,
+			  origin: 'left',
+			  distance: '300px',
+			  viewFactor: 0.2
+		  })
+		  sr.reveal('.info-right',{
+			  duration: 2000,
+			  origin: 'right',
+			  distance: '300px',
+			  viewFactor: 0.2
+		  })
 	  </script>
+
+
+<!-- Smoth Scroll -->
+<script src="js/smooth-scroll.js"></script>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+	<script>
+
+	</script>
+
 
 </body>
 </html>
